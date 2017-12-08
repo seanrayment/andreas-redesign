@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+	</head>
+
+	<body>
+
+		<div class="page-wrapper">
+
+			<div id="nav-wrapper" class="nav-wrapper">
+				
+				<ul class="nav-list">
+					<li class="menu-item">
+						<a href="#" class="menu-link">Home</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Menu</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Gallery</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Events</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Directions</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Blog</a>
+					</li>
+					<li class="menu-item">
+						<a href="index.html" class="menu-link">Contact</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Store</a>
+					</li>
+				</ul>
+
+				<div onclick="closeNav()" class="x-button">x</div>
+
+				<div class="newsletter-section">
+					<p class="text-small">Subscribe to our Newsletter</p>
+					<input type="text" name="Email" placeholder="Email">
+					<div class="button-item">
+						<a href="#" class="button newsletter-button">Submit</a>
+					</div>
+
+				</div>
+
+				<div class="reservation-section">
+					<p class="text-small">Call to make a reservation</p>
+					<p class="text-small">401.331.7879</p>
+				</div>
+
+				<div class="social-media-section">
+				
+					<!-- <p>Follow us on social media</p> -->
+
+					<a class="icon-link" href="#">
+						<img src='./facebook_icon.png'>
+					</a>
+					<a class="icon-link" href="#">
+						<img src='./twitter_icon.png'>
+					</a>
+				
+				</div>
+
+			</div>
+
+			<div class="content-wrapper">
+			
+				<div class="non-footer-wrapper">
+
+				<div class="header-wrapper">
+
+					<img onclick="slide_nav()" class="hamburger" src="./hamburger.svg">
+
+					<div class="button-item">
+						<a href="https://www.grubhub.com/welcome/orderup?utm_source=orderup.com&utm_medium=grubhub-owned-delivery-properties&utm_campaign=orderupmigration_2017&utm_content=nopromo_in-product-redirect_alldiners" class="top-button button">Order Delivery</a>
+					</div>
+
+					<div class="title-item">
+						<img src="andreas.png">
+					</div>
+
+					<div class="contact-item">
+						<p class="contact-text">
+							268 Thayer Street <br>
+							Providence, RI 02906 <br>
+							401.331.7879
+						</p>
+					</div>
+
+				</div>
+
+				<div class="info-wrapper">
+					<p class="text-emphasis">Come Dine with Us!</p>
+					<p class="content-text">For reservations, private occasions, and catering, call us at <span class="blue-emphasis">401.331.7879</span></p>
+					<p class="text-small">Fill out the form below and we will get back to you shortly</p>
+					<form>
+						<input class="one-line-input" type="text" name="Name" placeholder="Name">
+						<input class="one-line-input" type="text" name="Email" placeholder="Email">
+						<textarea class="multi-line-input" name="message" placeholder="Message"></textarea>
+						<a href="#" class="button submit-button">Submit</a>
+					</form>
+
+				</div>
+
+				</div>
+
+				<div class="footer-wrapper">
+					<p class="footer-text">Download our apps for the best mobile experience</p>
+					<div class="app-badge-row">
+						<img class="badge" src="./Get_it_on_Google_play.svg">
+						<img class="badge" src="./app-store-badge.svg">
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script>
+			
+			function slide_nav() {
+				var nav = document.getElementById("nav-wrapper");
+				console.log("clicked!")
+				nav.className += " nav-slide";
+			}
+
+			function closeNav() {
+				var nav = document.getElementById("nav-wrapper");
+				nav.className = "nav-wrapper";
+			}
+
+		</script>
+			
+	</body>
+
+</html>
